@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #dedede;
+}
+
+html {
+  background: #000000;
+}
+
+.music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2em;
+  color: #7159c1;
+  margin-bottom: 20px;
+
+  display: inline-flex;
+  text-align: center;
+}
+
+.player {
+  position: relative;
+  width: 500px;
+  min-height: 100px;
+  background: #000000;
+  border: 2px solid #121212;
+  border-radius: 80px;
+  padding: 20px 30px;
+  box-shadow: -10px -10px 15px #121212, 10px 10px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 15px #121212, inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btns {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.btns span {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #131313;
+  color: #7777;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btns span:active,
+.btns span.active {
+  color: #7159c1;
+  box-shadow: inset 0 -7px 5px rgba(0, 0, 0, 0.025),
+    inset 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btns span.playPause {
+  width: 100px;
+  height: 100px;
+}
+
+.btns span ion-icon {
+  font-size: 2em;
+}
+
+.btns span.playPause ion-icon {
+  font-size: 2em;
+}
